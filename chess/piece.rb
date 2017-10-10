@@ -34,9 +34,12 @@ end
 class Piece
   attr_reader :board, :position
 
+  ALL = []
+
   def initialize(board, position)
     @board = board
     @position = position
+    ALL << self
   end
 
   def to_s

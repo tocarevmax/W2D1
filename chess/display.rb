@@ -35,9 +35,12 @@ b= Board.new
 bishop = Bishop.new(b,[1,3])
 b.grid[1][3] = bishop
 
+
+
 display = Display.new(b)
 display.render
-p bishop.moves
+p Piece::ALL
+# p bishop.moves
 
 #
 # while true
